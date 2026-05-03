@@ -21,9 +21,7 @@ public class ValidationStep extends ValidationPage {
 
 
     @Step("Validar los datos del claim creado")
-
-
-        public void validarClaimCreado(String empleado, String evento, String current, String remarks) {
+    public void validarClaimCreado(String empleado, String evento, String current, String remarks) {
 
             lblEmployee.waitUntilVisible();
             lblEvent.waitUntilVisible();
@@ -38,8 +36,12 @@ public class ValidationStep extends ValidationPage {
             assertThat(lblCurrency.getValue().trim()).isEqualTo(current);
             assertThat(lblRemarks.getValue().trim()).isEqualTo(remarks);
 
+    }
 
-
+    //Directory
+    @Step("Validacion de Card de Empleado encontrada")
+    public Boolean EmpleadoEncontrado(){
+        return card_record.isDisplayed();
     }
 
 }

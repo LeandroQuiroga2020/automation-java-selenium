@@ -14,12 +14,18 @@ public class DirectoryStep extends DirectoryPage {
     }
     @Step("El usuario selecciona Job Title")
     public void seleccionarJobTitle(String nombreJobTitle) {
-        combo_jobTitle.waitUntilClickable().click();
 
+        combo_jobTitle.waitUntilClickable().click();
         WebElementFacade opcion = find(By.xpath("//div[@role='listbox']//span[contains(text(),'" + nombreJobTitle + "')]"
         ));
 
         opcion.waitUntilVisible().waitUntilClickable().click();
 
+    }
+
+    @Step("Clic en boton Search")
+    public void clickSearch(){
+        btn_search.shouldBeVisible();
+        btn_search.waitUntilClickable().click();
     }
 }

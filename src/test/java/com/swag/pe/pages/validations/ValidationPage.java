@@ -28,6 +28,12 @@ public class ValidationPage extends PageObject {
     @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/div[1]/form/div[4]/div/div/div/div[2]/textarea")
     public WebElementFacade lblRemarks;
 
+    //Directory
+    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div/div[2]/div/div/div")
+    public WebElementFacade card_record;
+
+
+
 
 
 }

@@ -9,6 +9,7 @@ import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import net.thucydides.core.annotations.Steps;
+import org.junit.Assert;
 
 import java.util.Map;
 
@@ -38,6 +39,17 @@ public class DirectoryDef {
     public void seleccionarEvent(String nombreJobTitle) {
         directory.seleccionarJobTitle(nombreJobTitle);
     }
+
+    @And("el usuario hace click en el boton Search")
+    public void ClickBotonSearch() {
+        directory.clickSearch();
+    }
+    @Then("se muestra card de empleado buscado")
+    public void ValidarEmpleado(){
+        Assert.assertTrue(validate.EmpleadoEncontrado());
+    }
+
+
 
 
 

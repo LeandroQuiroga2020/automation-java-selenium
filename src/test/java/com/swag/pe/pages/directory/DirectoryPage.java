@@ -11,4 +11,8 @@ public class DirectoryPage extends PageObject {
 
     @FindBy(xpath="//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[2]/div/div[2]/div/div")
     protected WebElementFacade combo_jobTitle;
+
+    @FindBy(xpath="//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[2]/button[2]")
+    protected WebElementFacade btn_search;
+
 }
