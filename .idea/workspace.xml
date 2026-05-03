@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b78b3288-4902-4871-9df0-c668de038d4c" name="Changes" comment="agrego entrada a combo Job title">
+    <list default="true" id="b78b3288-4902-4871-9df0-c668de038d4c" name="Changes" comment="agrego validacion de card empleado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/swag/pe/definitions/DirectoryDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/definitions/DirectoryDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/swag/pe/pages/directory/DirectoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/pages/directory/DirectoryPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/swag/pe/pages/validations/ValidationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/pages/validations/ValidationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/swag/pe/steps/directory/DirectoryStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/steps/directory/DirectoryStep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/swag/pe/steps/validations/ValidationStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/steps/validations/ValidationStep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/3.directory.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/3.directory.feature" afterDir="false" />
     </list>
@@ -173,13 +171,22 @@
       <option name="project" value="LOCAL" />
       <updated>1777834558496</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="agrego validacion de card empleado">
+      <option name="closed" value="true" />
+      <created>1777837641419</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1777837641420</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Primer commit - proyecto Selenium OrangeHRM" />
     <MESSAGE value="Agrego nuevas carpetas" />
     <MESSAGE value="agrego entrada a combo Job title" />
-    <option name="LAST_COMMIT_MESSAGE" value="agrego entrada a combo Job title" />
+    <MESSAGE value="agrego validacion de card empleado" />
+    <option name="LAST_COMMIT_MESSAGE" value="agrego validacion de card empleado" />
   </component>
 </project>

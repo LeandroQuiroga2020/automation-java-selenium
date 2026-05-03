@@ -48,8 +48,14 @@ public class DirectoryDef {
     public void ValidarEmpleado(){
         Assert.assertTrue(validate.EmpleadoEncontrado());
     }
-
-
+    /*@And("se valida que el empleado tenga cargo {string}")
+    public void ValidarPuestoEmpleado(){
+        Assert.assertTrue(validate.PuestoEmpleado());
+    }*/
+    @And("se valida que el empleado tenga cargo {string}")
+    public void validarPuestoEmpleado(String puestoEsperado) {
+        Assert.assertTrue(validate.PuestoEmpleado(puestoEsperado));
+    }
 
 
 

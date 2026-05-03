@@ -44,4 +44,17 @@ public class ValidationStep extends ValidationPage {
         return card_record.isDisplayed();
     }
 
+    //Directory label puesto de empleado
+  /*  @Step("Validacion de label con puesto de empleado")
+    public Boolean PuestoEmpleado(){
+        return lbl_puestoEmpleado.isDisplayed();
+    }*/
+
+    @Step("Validación de label con puesto de empleado {0}")
+    public Boolean PuestoEmpleado(String puestoEsperado) {
+        // Verifica que el texto del label sea igual al esperado
+        return lbl_puestoEmpleado.isDisplayed() &&
+                lbl_puestoEmpleado.getText().equals(puestoEsperado);
+    }
+
 }

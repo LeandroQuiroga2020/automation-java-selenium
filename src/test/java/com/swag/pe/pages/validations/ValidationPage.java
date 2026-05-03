@@ -31,7 +31,9 @@ public class ValidationPage extends PageObject {
     //Directory
     @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div/div[2]/div/div/div")
     public WebElementFacade card_record;
-
+    // Directory label
+    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div/div[2]/div/div/div/p[2]")
+    public WebElementFacade lbl_puestoEmpleado;
 
 
 

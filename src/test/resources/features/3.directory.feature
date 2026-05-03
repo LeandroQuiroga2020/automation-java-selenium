@@ -9,3 +9,4 @@ Feature: CP03 - Buscar Job en seccion Directory
     And el usuario elige la opcion "Chief Financial Officer" del combo Job Title
     And el usuario hace click en el boton Search
     Then se muestra card de empleado buscado
+    And se valida que el empleado tenga cargo "Chief Financial Officer"
