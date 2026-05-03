@@ -34,6 +34,11 @@ public class DirectoryDef {
         directory.clickDirectory();
     }
 
+    @And("el usuario elige la opcion {string} del combo Job Title")
+    public void seleccionarEvent(String nombreJobTitle) {
+        directory.seleccionarJobTitle(nombreJobTitle);
+    }
+
 
 
 }
