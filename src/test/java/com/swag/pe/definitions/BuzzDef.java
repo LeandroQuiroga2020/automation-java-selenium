@@ -18,21 +18,17 @@ public class BuzzDef {
     WebSite url;
 
     @Steps(shared=true)
-    LoginStep login;
-
-    @Steps(shared=true)
-    ValidationStep validate;
-
-    @Steps(shared=true)
-    ClaimStep claim;
-
-    @Steps(shared=true)
     BuzzStep buzz;
 
 
-    @And("el usuario ingresa y hace click en boton Buzz")
+    @And("el usuario hace click en boton Buzz")
     public void ClickBotonBuzz() {
         buzz.clickBuzz();
+    }
+
+    @And("el usuario hace click en el boton Shared Photos")
+    public void ClickBotonSharedPhotos() {
+        buzz.clickSharedPhotos();
     }
 
 

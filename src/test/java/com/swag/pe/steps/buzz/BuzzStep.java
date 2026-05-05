@@ -10,4 +10,10 @@ public class BuzzStep extends BuzzPage {
         btn_buzz.shouldBeVisible();
         btn_buzz.waitUntilClickable().click();
     }
+
+    @Step("Clic en boton Shared Photos")
+    public void clickSharedPhotos(){
+        btn_SharedPhotos.shouldBeVisible();
+        btn_SharedPhotos.waitUntilClickable().click();
+    }
 }

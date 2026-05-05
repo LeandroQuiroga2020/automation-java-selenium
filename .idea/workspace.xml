@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b78b3288-4902-4871-9df0-c668de038d4c" name="Changes" comment="agrego validacion de card empleado, mas validacion de label coincidente con cargo de empleado">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/definitions/BuzzDef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/pages/buzz/BuzzPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/steps/buzz/BuzzStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/4.buzz.feature" afterDir="false" />
+    <list default="true" id="b78b3288-4902-4871-9df0-c668de038d4c" name="Changes" comment="agrego test de ingreso a seccion buzz">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/swag/pe/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swag/pe/definitions/BuzzDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/definitions/BuzzDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swag/pe/pages/buzz/BuzzPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/pages/buzz/BuzzPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swag/pe/steps/buzz/BuzzStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/steps/buzz/BuzzStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/4.buzz.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/4.buzz.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777840153906</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="agrego test de ingreso a seccion buzz">
+      <option name="closed" value="true" />
+      <created>1777906936445</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1777906936445</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -213,6 +220,7 @@
     <MESSAGE value="agrego entrada a combo Job title" />
     <MESSAGE value="agrego validacion de card empleado" />
     <MESSAGE value="agrego validacion de card empleado, mas validacion de label coincidente con cargo de empleado" />
-    <option name="LAST_COMMIT_MESSAGE" value="agrego validacion de card empleado, mas validacion de label coincidente con cargo de empleado" />
+    <MESSAGE value="agrego test de ingreso a seccion buzz" />
+    <option name="LAST_COMMIT_MESSAGE" value="agrego test de ingreso a seccion buzz" />
   </component>
 </project>
