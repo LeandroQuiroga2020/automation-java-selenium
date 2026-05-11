@@ -10,6 +10,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import net.thucydides.core.annotations.Steps;
 
+import java.awt.*;
 import java.util.Map;
 
 public class BuzzDef {
@@ -31,6 +32,20 @@ public class BuzzDef {
         buzz.clickSharedPhotos();
     }
 
+    @And("el usuario sube el archivo {string}")
+    public void SubirArchivo(String filePath) throws AWTException, InterruptedException {
+        buzz.clickAddPhotos();
+        // Esper a que la ventana de Windows se abra
+        //Thread.sleep(1000);
 
+        // Subir archivo usando Robot
+        buzz.uploadFileWithRobot(filePath);
+
+}
+
+    @And("el usuario hace clicj en el boton shared")
+    public void ClickBotonShared() {
+        buzz.clickShared();
+    }
 }
 
