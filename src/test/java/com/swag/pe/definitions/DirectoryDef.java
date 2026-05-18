@@ -8,7 +8,8 @@ import com.swag.pe.utilities.website.WebSite;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import net.thucydides.core.annotations.Steps;
+import net.serenitybdd.annotations.Step;
+import net.serenitybdd.annotations.Steps;
 import org.junit.Assert;
 
 import java.util.Map;

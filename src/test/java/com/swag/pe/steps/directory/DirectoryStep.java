@@ -2,7 +2,7 @@ package com.swag.pe.steps.directory;
 
 import com.swag.pe.pages.directory.DirectoryPage;
 import net.serenitybdd.core.pages.WebElementFacade;
-import net.thucydides.core.annotations.Step;
+import net.serenitybdd.annotations.Step;
 import org.openqa.selenium.By;
 
 public class DirectoryStep extends DirectoryPage {

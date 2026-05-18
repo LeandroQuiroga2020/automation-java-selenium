@@ -2,9 +2,15 @@ package com.swag.pe.steps.validations;
 
 import com.swag.pe.pages.validations.ValidationPage;
 import net.serenitybdd.core.Serenity;
-import net.thucydides.core.annotations.Step;
+import net.serenitybdd.annotations.Step;
+import net.thucydides.model.domain.TestResult;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.is;
+
+
+
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ValidationStep extends ValidationPage {
 
@@ -31,12 +37,17 @@ public class ValidationStep extends ValidationPage {
             System.out.println("Employee TEXT: " + lblEmployee.getText());
             System.out.println("Employee VALUE: " + lblEmployee.getValue());  //debug para ver que trae cada valor
 
-            assertThat(lblEmployee.getValue().trim()).isEqualTo(empleado);
+            assertThat(lblEmployee.getValue().trim(), is(empleado));
+            assertThat(lblEvent.getValue().trim(), is(evento));
+            assertThat(lblCurrency.getValue().trim(), is(current));
+            assertThat(lblRemarks.getValue().trim(), is(remarks));
+            /*assertThat(lblEmployee.getValue().trim()).isEqualTo(empleado);
             assertThat(lblEvent.getValue().trim()).isEqualTo(evento);
             assertThat(lblCurrency.getValue().trim()).isEqualTo(current);
-            assertThat(lblRemarks.getValue().trim()).isEqualTo(remarks);
+            assertThat(lblRemarks.getValue().trim()).isEqualTo(remarks);*/
 
     }
+
 
     //Directory
     @Step("Validacion de Card de Empleado encontrada")

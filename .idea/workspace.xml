@@ -4,14 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b78b3288-4902-4871-9df0-c668de038d4c" name="Changes" comment="agrego ingreso a boton Shared Photos">
+    <list default="true" id="b78b3288-4902-4871-9df0-c668de038d4c" name="Changes" comment="agrego ingreso a boton AddPhotos y boton Shared, se sube posteo correctamente">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/pages/claims/ClaimPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serenity.properties" beforeDir="false" afterPath="$PROJECT_DIR$/serenity.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/swag/pe/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/swag/pe/definitions/BuzzDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/definitions/BuzzDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/swag/pe/pages/buzz/BuzzPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/pages/buzz/BuzzPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swag/pe/definitions/ClaimDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/definitions/ClaimDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swag/pe/definitions/DirectoryDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/definitions/DirectoryDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swag/pe/definitions/LoginDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/definitions/LoginDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swag/pe/pages/claims/claimPage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/swag/pe/steps/buzz/BuzzStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/steps/buzz/BuzzStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/4.buzz.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/4.buzz.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swag/pe/steps/claims/ClaimStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/steps/claims/ClaimStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swag/pe/steps/directory/DirectoryStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/steps/directory/DirectoryStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swag/pe/steps/login/LoginStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/steps/login/LoginStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swag/pe/steps/validations/ValidationStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/steps/validations/ValidationStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swag/pe/utilities/website/WebSite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swag/pe/utilities/website/WebSite.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,18 +45,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "LeandroQuiroga2020"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LeandroQuiroga2020&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/LeandroQuiroga2020/automation-java-selenium.git",
-    "accountId": "00139e5c-f6ac-4243-b02d-e50f5d269547"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/LeandroQuiroga2020/automation-java-selenium.git&quot;,
+    &quot;accountId&quot;: &quot;00139e5c-f6ac-4243-b02d-e50f5d269547&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -60,16 +70,18 @@
     "JUnit.Runner (1).executor": "Run",
     "JUnit.Runner.executor": "Run",
     "JUnit.com.swag.pe.steps.claims in OrangeHRM.executor": "Run",
+    "Maven.swag-demo [clean].executor": "Run",
     "Maven.swag-demo [serenity:aggregate].executor": "Run",
     "Maven.swag-demo [validate].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/leandroq.PRX/IdeaProjects/OrangeHRM/src/test/resources/featues",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "vcs.Git"
+    "settings.editor.selected.configurable": "configurable.group.language"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -86,6 +98,7 @@
     <option name="myCommands">
       <command value="mvn validate" />
       <command value="mvn serenity:aggregate" />
+      <command value="mvn clean" />
     </option>
   </component>
   <component name="RunManager" selected="JUnit.Runner (1)">
@@ -221,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777987993576</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="agrego ingreso a boton AddPhotos y boton Shared, se sube posteo correctamente">
+      <option name="closed" value="true" />
+      <created>1778532947175</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1778532947175</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -232,6 +253,7 @@
     <MESSAGE value="agrego validacion de card empleado, mas validacion de label coincidente con cargo de empleado" />
     <MESSAGE value="agrego test de ingreso a seccion buzz" />
     <MESSAGE value="agrego ingreso a boton Shared Photos" />
-    <option name="LAST_COMMIT_MESSAGE" value="agrego ingreso a boton Shared Photos" />
+    <MESSAGE value="agrego ingreso a boton AddPhotos y boton Shared, se sube posteo correctamente" />
+    <option name="LAST_COMMIT_MESSAGE" value="agrego ingreso a boton AddPhotos y boton Shared, se sube posteo correctamente" />
   </component>
 </project>

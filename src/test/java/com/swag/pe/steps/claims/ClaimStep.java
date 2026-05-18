@@ -1,87 +1,87 @@
 package com.swag.pe.steps.claims;
 
-import com.swag.pe.pages.claims.claimPage;
-import org.openqa.selenium.By;
+import com.swag.pe.pages.claims.ClaimPage;
+import net.serenitybdd.annotations.Step;
 import net.serenitybdd.core.pages.WebElementFacade;
-import net.thucydides.core.annotations.Step;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
-import java.util.concurrent.TimeUnit;
+public class ClaimStep {
 
-public class ClaimStep extends claimPage {
+    ClaimPage claimPage;
 
     @Step("Clic en boton Claim")
-    public void clickClaim(){
-        btn_claim.shouldBeVisible();
-        btn_claim.waitUntilClickable().click();
+    public void clickClaim() {
+
+        claimPage.btn_claim.waitUntilVisible();
+        claimPage.btn_claim.waitUntilClickable().click();
     }
 
-    @Step("Click en boton Asignar Claim")
-    public void clickAsignarClaim(){
-        btn_asignarClaim.shouldBeVisible();
-        btn_asignarClaim.waitUntilClickable().click();
+    @Step("Click en boton Assign Claim")
+    public void clickAsignarClaim() {
+
+        claimPage.btn_asignarClaim.waitUntilVisible();
+        claimPage.btn_asignarClaim.waitUntilClickable().click();
     }
 
     @Step("El usuario selecciona empleado")
     public void seleccionarEmpleado(String nombre) {
-        combo_employeeName.waitUntilClickable().click();
-        combo_employeeName.clear();
-        combo_employeeName.type(nombre);
 
-        // Esperar a que aparezcan las opciones
-        waitABit(1500);
+        claimPage.combo_employeeName.waitUntilClickable().click();
+        claimPage.combo_employeeName.clear();
+        claimPage.combo_employeeName.type(nombre);
 
-        // Click en la PRIMERA opción del autocomplete
-        WebElement opcion5 = getDriver().findElement(
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        WebElement opcion = claimPage.getDriver().findElement(
                 By.xpath("(//div[contains(@class,'oxd-autocomplete-option')])[1]")
         );
 
-        opcion5.click();
-
-        //para commit
-
-
+        opcion.click();
     }
-
 
     @Step("El usuario selecciona evento")
     public void seleccionarEvent(String nombreEvent) {
-        combo_event.waitUntilClickable().click();
 
-        WebElementFacade opcion = find(By.xpath("//div[@role='listbox']//span[contains(text(),'" + nombreEvent + "')]"
-        ));
+        claimPage.combo_event.waitUntilClickable().click();
 
-        opcion.waitUntilVisible().waitUntilClickable().click();
+        WebElementFacade opcion = claimPage.find(
+                By.xpath("//div[@role='listbox']//span[contains(text(),'" + nombreEvent + "')]")
+        );
 
+        opcion.waitUntilVisible();
+        opcion.waitUntilClickable().click();
     }
 
     @Step("El usuario selecciona currency")
     public void seleccionarCurrency(String nombreCurrency) {
-        combo_currency.waitUntilClickable().click();
 
-        WebElementFacade opcionNew = find(By.xpath("//div[@role='listbox']//span[contains(text(),'" + nombreCurrency + "')]"
-        ));
-        opcionNew.waitUntilVisible().waitUntilClickable().click();
+        claimPage.combo_currency.waitUntilClickable().click();
 
+        WebElementFacade opcion = claimPage.find(
+                By.xpath("//div[@role='listbox']//span[contains(text(),'" + nombreCurrency + "')]")
+        );
+
+        opcion.waitUntilVisible();
+        opcion.waitUntilClickable().click();
     }
 
     @Step("El usuario escribe texto libre en remarks")
-    public void typeRemarks(String password){
-        txt_remarks.waitUntilClickable().click();
-        txt_remarks.sendKeys(password);
+    public void typeRemarks(String remarks) {
+
+        claimPage.txt_remarks.waitUntilClickable().click();
+        claimPage.txt_remarks.clear();
+        claimPage.txt_remarks.sendKeys(remarks);
     }
 
     @Step("Clic en boton Create Claim")
-    public void clickCreateClaim(){
-        btn_createClaim.shouldBeVisible();
-        btn_createClaim.waitUntilClickable().click();
+    public void clickCreateClaim() {
+
+        claimPage.btn_createClaim.waitUntilVisible();
+        claimPage.btn_createClaim.waitUntilClickable().click();
     }
-
-
 }

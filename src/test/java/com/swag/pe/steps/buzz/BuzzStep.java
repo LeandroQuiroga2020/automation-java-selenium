@@ -1,7 +1,7 @@
 package com.swag.pe.steps.buzz;
 
 import com.swag.pe.pages.buzz.BuzzPage;
-import net.thucydides.core.annotations.Step;
+import net.serenitybdd.annotations.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
